@@ -1,0 +1,18 @@
+
+**** Build of configuration Debug for project lab1 ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../lab1.cpp'
+'Invoking: GNU Compiler'
+"C:/Users/Tingkai/Desktop/energia-0101E0014/hardware/tools/msp430/bin/msp430-gcc.exe" -c -mmcu=msp430g2553 -DF_CPU=16000000L -DARDUINO=101 -DENERGIA=12 -I"C:/Users/Tingkai/Desktop/energia-0101E0014/hardware/msp430/cores/msp430" -I"C:/Users/Tingkai/Desktop/energia-0101E0014/hardware/msp430/variants/launchpad" -I"C:/Users/Tingkai/Desktop/energia-0101E0014/hardware/tools/msp430/msp430/include" -Os -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -MMD -MP -MF"lab1.d" -MT"lab1.d" -o"lab1.o"  "../lab1.cpp"
+'Finished building: ../lab1.cpp'
+' '
+'Building target: lab1.out'
+'Invoking: GNU Linker'
+"C:/Users/Tingkai/Desktop/energia-0101E0014/hardware/tools/msp430/bin/msp430-gcc.exe" -mmcu=msp430g2553 -DF_CPU=16000000L -DARDUINO=101 -DENERGIA=12 -Os -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -Wl,-Map,"lab1.map" -Wl,--gc-sections -L"C:/Users/Tingkai/Desktop/TI/lpmsp430g2553_core/Debug" -Wl,--undefined,main -o"lab1.out" "./lab1.o"  -Wl,--start-group -l"lpmsp430g2553_core" -l"m" -Wl,--end-group 
+'Finished building target: lab1.out'
+' '
+C:/Users/Tingkai/Desktop/energia-0101E0014/hardware/tools/msp430/bin/msp430-objcopy -O ihex -R .eeprom lab1.out lab1.hex
+' '
+
+**** Build Finished ****
